@@ -1047,3 +1047,8 @@ Processing by SongsController#index as HTML
   [1m[35mArtist Load (0.1ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT 1  [["id", 5]]
 Redirected to http://165.227.31.208:45832/artists
 Completed 302 Found in 5ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/artists" for 190.115.182.227 at 2019-01-13 22:04:44 +0000
+Cannot render console from 190.115.182.227! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArtistsController#index as HTML
