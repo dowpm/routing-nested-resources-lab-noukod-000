@@ -14,7 +14,7 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'shoulda'
   gem 'tux'
-  gem 'rack-flash3'
+  # gem 'rack-flash3'
 end
 
 group :development do
