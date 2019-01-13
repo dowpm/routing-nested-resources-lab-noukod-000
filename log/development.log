@@ -966,3 +966,15 @@ Completed 302 Found in 8ms (ActiveRecord: 1.0ms)
 Started GET "/artists" for 190.115.182.227 at 2019-01-13 21:58:09 +0000
 Cannot render console from 190.115.182.227! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
 Processing by ArtistsController#index as HTML
+  [1m[35mArtist Load (0.2ms)[0m  SELECT "artists".* FROM "artists"
+  Rendered artists/index.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 42812ms (Views: 15.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/artists/5/songs" for 190.115.182.227 at 2019-01-13 21:58:59 +0000
+Cannot render console from 190.115.182.227! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SongsController#index as HTML
+  Parameters: {"artist_id"=>"5"}
+  [1m[36mArtist Load (0.1ms)[0m  [1mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT 1[0m  [["id", 5]]
+Redirected to http://165.227.31.208:45832/artists
+Completed 302 Found in 5ms (ActiveRecord: 0.8ms)
